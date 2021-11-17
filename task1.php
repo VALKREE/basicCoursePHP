@@ -1,5 +1,5 @@
 <?php
- $task = "Задача 3";
+ $task = "Задача 1";
 ?>
 <!doctype html>
 <html lang="en">
@@ -24,27 +24,21 @@
     </header>
     <main style="display:flex;flex-direction:column;">
         <?php
-            function addition($a,$b){
-                return $a + $b;
+            $a = 1;
+            $b = -2;
+            $c = 0;
+            if($a >= 0 && $b >= 0){
+                $c = $a - $b;
             }
-            $addition = addition(1,3);
-            echo ("<p>Сложение: ".$addition."</p>");
-            function subtraction($a,$b){
-                return $a - $b;
+            if($a < 0 && $b <0){
+                $c = $a * $b;
             }
-            $subtraction = subtraction(1,3);
-            echo ("<p>Вычитание: ".$subtraction."</p>");
-            function multiplication($a,$b){
-                return $a * $b;
+            if($a >= 0 && $b <0 || $a < 0 && $b >= 0){
+                $c = $a + $b;
             }
-            $multiplication = multiplication(1,3);
-            echo ("<p>Умножение: ".$multiplication."</p>");
-            function division($a,$b){
-                return $a / $b;
-            }
-            $division = division(1,3);
-            echo ("<p>Деление: ".$division."</p>");
         ?>
+        <p>Текущее значение переменных: a= <?= $a ?>, b= <?= $b ?>
+        <p>Ответ: <?= $c ?></p>
     </main>
 </body>
 </html>

@@ -1,87 +1,81 @@
 <?php
-echo "Hello, World!";
+ $task = "Задача 2";
 ?>
-<br><p>---</p><br>
-<?php
-$name = "GeekBrains user";
-echo "Hello, $name!";
-?>
-<br><p>---</p><br>
-<?php
-define('MY_CONST', 100);
-echo MY_CONST;
-?>
-<br><p>---</p><br>
-<?php
-$int10 = 42;
-$int2 = 0b101010;
-$int8 = 052;
-$int16 = 0x2A;
-echo "Десятеричная система $int10 <br>";
-echo "Двоичная система $int2 <br>";
-echo "Восьмеричная система $int8 <br>";
-echo "Шестнадцатеричная система $int16 <br>";
-?>
-<br><p>---</p><br>
-<?php
-$precise1 = 1.5;
-$precise2 = 1.5e4;
-$precise3 = 6E-8;
-echo "$precise1 | $precise2 | $precise3";
-?>
-<br><p>---</p><br>
-<?php
-$a1 = 1;
-echo "$a1";
-
-echo '$a1';
-?>
-<br><p>---</p><br>
-<?php
-$a2 = 10;
-$b2 = (boolean) $b;
-?>
-<br><p>---</p><br>
-<?php
-$a3 = 'Hello,';
-$b3 = 'world';
-$c3 = $a3 . $b3;
-echo $c3;
-?>
-<br><p>---</p><br>
-<?php
-$a4 = 4;
-$b4 = 5;
-echo $a4 + $b4 . '<br>';    // сложение
-echo $a4 * $b4 . '<br>';    // умножение
-echo $a4 - $b4 . '<br>';    // вычитание
-echo $a4 / $b4 . '<br>';  // деление
-echo $a4 % $b4 . '<br>'; // остаток от деления
-echo $a4 ** $b4 . '<br>'; // возведение в степень
-?>
-<br><p>---</p><br>
-<?php
-$a5 = 4;
-$b5 = 5;
-$a5 += $b5;
-echo 'a = ' . $a5;
-$a5 = 0;
-echo $a5++;     // Постинкремент
-echo ++$a5;    // Преинкремент
-echo $a5--;     // Постдекремент
-echo --$a5;    // Предекремент
-?>
-<br><p>---</p><br>
-<?php
-$a6 = 4;
-$b6 = 5;
-var_dump($a6 == $b6);  // Сравнение по значению
-var_dump($a6 === $b6); // Сравнение по значению и типу
-var_dump($a6 > $b6);    // Больше
-var_dump($a6 < $b6);    // Меньше
-var_dump($a6 <> $b6);  // Не равно
-var_dump($a6 != $b6);   // Не равно
-var_dump($a6 !== $b6); // Не равно без приведения типов
-var_dump($a6 <= $b6);  // Меньше или равно
-var_dump($a6 >= $b6);  // Больше или равно
-?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><?= $task ?></title>
+</head>
+<body>
+    <header>
+        <h1><?= $task ?></h1>
+        <div style="display: flex; flex-direction: row; gap: 10px;">
+                    <a href="./index.php">Главная</a>
+                    <a href="./task1.php">Задача 1</a>
+                    <a href="./task2.php">Задача 2</a>
+                    <a href="./task3.php">Задача 3</a>
+                    <a href="./task4.php">Задача 4</a>
+                    <a href="./task5.php">Задача 5</a>
+                <div>
+    </header>
+    <main style="display:flex;flex-direction:column;">
+        <?php
+            $a = 15;
+            switch ($a){
+                default:
+                    echo("a = 0");
+                    break;
+                case 1:
+                    echo("a = 1");
+                    break;
+                case 2:
+                    echo("a = 2");
+                    break;
+                case 3:
+                    echo("a = 3");
+                    break;
+                case 4:
+                    echo("a = 4");
+                    break;
+                case 5:
+                    echo("a = 5");
+                    break;
+                case 6:
+                    echo("a = 6");
+                    break;
+                case 7:
+                    echo("a = 7");
+                    break;
+                case 8:
+                    echo("a = 8");
+                    break;
+                case 9:
+                    echo("a = 9");
+                    break;
+                case 10:
+                    echo("a = 10");
+                    break;
+                case 11:
+                    echo("a = 11");
+                    break;
+                case 12:
+                    echo("a = 12");
+                    break;
+                case 13:
+                    echo("a = 13");
+                    break;
+                case 14:
+                    echo("a = 14");
+                    break;
+                case 15:
+                    echo("a = 15");
+                    break;
+            }
+        ?>
+    </main>
+</body>
+</html>
