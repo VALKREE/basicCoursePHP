@@ -1,5 +1,5 @@
 <?php
- $task = "Задача 3";
+ $task = "Задача 4";
 ?>
 <!doctype html>
 <html lang="en">
@@ -24,26 +24,37 @@
     </header>
     <main style="display:flex;flex-direction:column;">
         <?php
+
             function addition($a,$b){
                 return $a + $b;
             }
-            $addition = addition(1,3);
-            echo ("<p>Сложение: ".$addition."</p>");
             function subtraction($a,$b){
                 return $a - $b;
             }
-            $subtraction = subtraction(1,3);
-            echo ("<p>Вычитание: ".$subtraction."</p>");
             function multiplication($a,$b){
                 return $a * $b;
             }
-            $multiplication = multiplication(1,3);
-            echo ("<p>Умножение: ".$multiplication."</p>");
             function division($a,$b){
                 return $a / $b;
             }
-            $division = division(1,3);
-            echo ("<p>Деление: ".$division."</p>");
+            function mathOperation($a,$b,$operation){
+                switch($operation){
+                    case 0:
+                        echo("<p>".addition($a,$b)."</p>");
+                        break;
+                    case 1:
+                        echo("<p>".subtraction($a,$b)."</p>");
+                        break;
+                    case 2:
+                        echo("<p>".multiplication($a,$b)."</p>");
+                        break;
+                    case 3:
+                        echo("<p>".division($a,$b)."</p>");
+                        break;
+                }
+            }
+            $mathOperation = mathOperation(1,3,3);
+            // Не смог разобраться, как выполнить case "addition"-"division" с $mathOperation = mathOperation(1,3,addition-division);
         ?>
     </main>
 </body>
