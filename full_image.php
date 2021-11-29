@@ -8,12 +8,6 @@
     <title>Урок 4. Работа с файлами</title>
     <link rel="stylesheet" href="./CSS/index.css">
 </head>
-<?PHP
-    include "config.php";
-    $sql_images = "SELECT * FROM images";
-    $sql_fullImages = "SELECT * FROM images";
-    $res = mysqli_query($connect,$sql_images);
-?>
 <body class="body">
     <div class="wrapper">
         <header class="header">
@@ -24,18 +18,12 @@
             <a href="#">Link</a>
         </header>
         <main class="main">
-                <div class="gallery">
-                    <form class="gallery-form" action="upload.php" method="post" enctype="multipart/form-data">
-                        <label class="gallery-heading">Выберите файл</label>
-                        <input class="gallery-file" type="file" accept="image/*" name="image" />
-                        <input class="gallery-submit" type="submit" value="Загрузить" />
-                    </form>
-                    <div class="gallery-items">
-                        <?php
-                            include "scan.php";
-                        ?>
-                    <div>
-                </div>
+            <div class="fullImage-container">
+                <h3 class="fullImage-heading"><?= $_GET['title']?></h3>
+                <img class="fullImage-image" src="./images/source/image<?= $_GET['file']?>.png" alt=""><br>
+                <p class="fullImage-description"><?= $_GET['description']?></p>
+                <a class="fullImage-back" href="<?= $_SERVER['HTTP_REFERER'] ?>">Назад</a>
+            </div>
         </main>
         <footer class="footer">
             <a href="#">Link</a>
