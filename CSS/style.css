@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 24px; }
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.header {
+  height: 80px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; }
+  .header-link {
+    color: #fff;
+    transition: color 0.3s, -webkit-transform 0.3s; }
+    .header-link:hover {
+      color: red;
+      transition: color 0.3s, -webkit-transform 0.3s;
+      transform: scale(1.2); }
+
+.main {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px); }
+
+.footer {
+  height: 80px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; }
+  .footer-link {
+    color: #fff;
+    transition: color 0.3s, -webkit-transform 0.3s; }
+    .footer-link:hover {
+      color: red;
+      transition: color 0.3s, -webkit-transform 0.3s;
+      transform: scale(1.2); }
+
+.flexColumn {
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.flexRow {
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.main-goods {
+  margin: 1rem;
+  -webkit-justify-content: center;
+  justify-content: center;
+  gap: 1rem; }
+.main-good {
+  width: 260px;
+  padding: 15px 10px;
+  border: 1px solid #000;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 0.5rem; }
+.main-goodShortDescription {
+  text-align: center; }
+.main-goodAddToCart {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  gap: 10px; }
+.main-goodsQuantity {
+  text-align: center;
+  width: 50px;
+  height: 25px;
+  padding: 5px; }
+.main-addToCart {
+  height: 39px;
+  padding: 0 5px;
+  cursor: pointer; }
+
+.main-cart {
+  margin: 1rem; }
+.main-cartTable {
+  border: 1px solid #000;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center; }
+.main-cartTbody {
+  margin: 1rem;
+  gap: 15px; }
+.main-cartRow {
+  gap: 15px; }
+.main-cartCol {
+  width: 150px;
+  background: #ccc;
+  text-align: center;
+  gap: 15px;
+  padding: 15px 10px;
+  font-weight: normal; }
+
+.profile {
+  margin: 1rem;
+  -webkit-align-items: center;
+  align-items: center; }
+  .profile-register {
+    background: #65E9C5;
+    padding: 1rem;
+    border: 1px solid #000;
+    width: 600px;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center; }
+  .profile-form {
+    gap: 10px; }
+  .profile-label {
+    font-size: 20px; }
+  .profile-input {
+    padding: 5px;
+    font-size: 20px; }
+  .profile-submit {
+    background: #5FFFD3;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px 5px;
+    border: 1px solid #5FDDFF;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s; }
+    .profile-submit:hover {
+      background: #5FDDFF;
+      color: #fff;
+      transition: background 0.3s, color 0.3s; }
+
+.authOrRegister {
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 15px; }
+  .authOrRegister-heading {
+    font-size: 32px; }
+  .authOrRegister-login, .authOrRegister-register {
+    text-align: center;
+    width: 150px;
+    font-size: 22px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    background: #4ff0c0;
+    transition: background 0.3s, color 0.3s; }
+    .authOrRegister-login:hover, .authOrRegister-register:hover {
+      transition: background 0.3s, color 0.3s;
+      color: #fff;
+      background: #5FDDFF; }
+
+/*# sourceMappingURL=style.css.map */

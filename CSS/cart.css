@@ -1,0 +1,22 @@
+.main-cart {
+  margin: 1rem; }
+.main-cartTable {
+  border: 1px solid #000;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center; }
+.main-cartTbody {
+  margin: 1rem;
+  gap: 15px; }
+.main-cartRow {
+  gap: 15px; }
+.main-cartCol {
+  width: 150px;
+  background: #ccc;
+  text-align: center;
+  gap: 15px;
+  padding: 15px 10px;
+  font-weight: normal; }
+
+/*# sourceMappingURL=cart.css.map */

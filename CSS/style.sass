@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap')
+* 
+  margin: 0
+  padding: 0
+a
+  text-decoration: none 
+  color: #000
+html,body
+  height: 100%
+body
+  font-family: 'Yanone Kaffeesatz', sans-serif
+  font-size: 24px
+.wrapper
+  height: 100%
+  display: flex
+  -webkit-flex-direction: column 
+  -ms-flex-direction: column 
+  flex-direction: column 
+.header
+  height: 80px
+  background: #000 
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 1rem
+  &-link
+    color: #fff
+    transition: color .3s, -webkit-transform .3s
+    &:hover
+      color: red
+      transition: color .3s, -webkit-transform .3s
+      transform: scale(1.2)
+.main
+  -webkit-flex-grow: 1 
+  flex-grow: 1 
+  padding-left: calc(50% - 570px)
+  padding-right: calc(50% - 570px)
+.footer
+  height: 80px
+  background: #000 
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 1rem
+  &-link
+    color: #fff
+    transition: color .3s, -webkit-transform .3s
+    &:hover
+      color: red
+      transition: color .3s, -webkit-transform .3s
+      transform: scale(1.2)
+.flexColumn
+  display: flex
+  -webkit-flex-direction: column 
+  -ms-flex-direction: column 
+  flex-direction: column 
+.flexRow
+  display: flex
+  -webkit-flex-direction: row 
+  -ms-flex-direction: row 
+  flex-direction: row 
+  
+@import "./catalog.sass"
+@import "./cart.sass"
+@import "./profile.sass"

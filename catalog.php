@@ -11,7 +11,11 @@
 	<div class="wrapper">
 		<?PHP include "./components/header/header.php"; ?>	
 		<main class="main">
-			
+			<div class="main-goods flexRow">
+				<?PHP
+					include "./server/catalog.php";
+				?>
+			</div>
 		</main>
 		<?PHP include "./components/footer/footer.php"; ?>
 	</div>
