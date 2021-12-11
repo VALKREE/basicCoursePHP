@@ -1,65 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap')
-* 
-  margin: 0
-  padding: 0
-a
-  text-decoration: none 
-  color: #000
+*
+	margin: 0
+	padding: 0
+	
 html,body
-  height: 100%
-body
-  font-family: 'Yanone Kaffeesatz', sans-serif
-  font-size: 24px
+	height: 100%
 .wrapper
-  height: 100%
-  display: flex
-  -webkit-flex-direction: column 
-  -ms-flex-direction: column 
-  flex-direction: column 
+	height: 100%
+	display: flex
+	-webkit-flex-direction: column 
+	-ms-flex-direction: column 
+	flex-direction: column 
+.center
+	padding-left: calc(50% - 570px)
+	padding-right: calc(50% - 570px)  
+.header,.footer
+	height: auto
+	min-height: 60px
+	background: #000 
+	color: #fff
 .header
-  height: 80px
-  background: #000 
-  display: flex
-  justify-content: center
-  align-items: center
-  gap: 1rem
-  &-link
-    color: #fff
-    transition: color .3s, -webkit-transform .3s
-    &:hover
-      color: red
-      transition: color .3s, -webkit-transform .3s
-      transform: scale(1.2)
+	display: flex 
+	-webkit-justify-content: center 
+	justify-content: center 
+	-webkit-align-items: center 
+	align-items: center 
+	&-list
+		display: flex
+		-webkit-flex-direction: row 
+		-ms-flex-direction: row 
+		flex-direction: row 
+		gap: 1rem
+	&-listElement
+		list-style: none 
+	&-link
+		color: #fff
+		text-decoration: none 
+		
 .main
-  -webkit-flex-grow: 1 
-  flex-grow: 1 
-  padding-left: calc(50% - 570px)
-  padding-right: calc(50% - 570px)
-.footer
-  height: 80px
-  background: #000 
-  display: flex
-  justify-content: center
-  align-items: center
-  gap: 1rem
-  &-link
-    color: #fff
-    transition: color .3s, -webkit-transform .3s
-    &:hover
-      color: red
-      transition: color .3s, -webkit-transform .3s
-      transform: scale(1.2)
-.flexColumn
-  display: flex
-  -webkit-flex-direction: column 
-  -ms-flex-direction: column 
-  flex-direction: column 
-.flexRow
-  display: flex
-  -webkit-flex-direction: row 
-  -ms-flex-direction: row 
-  flex-direction: row 
-  
-@import "./catalog.sass"
-@import "./cart.sass"
-@import "./profile.sass"
+	height: 100%
+	&-goods
+		margin: 1rem
+		display: flex
+		-webkit-flex-direction: row 
+		-ms-flex-direction: row 
+		flex-direction: row 
+		-webkit-justify-content: center
+		justify-content: center
+		-webkit-align-items: center
+		align-items: center
+		gap: 1rem
+	&-good
+		text-align: center 
+		display: flex
+		-webkit-flex-direction: column 
+		-ms-flex-direction: column 
+		flex-direction: column 
+		-webkit-justify-content: center
+		justify-content: center
+		-webkit-align-items: center
+		align-items: center
+		border: 1px solid #000
+		padding: 1rem 
+		gap: 10px
+	&-cartHeading
+		display: flex
+		-webkit-flex-direction: row 
+		-ms-flex-direction: row 
+		flex-direction: row 
+		&_h4
+			width: 120px
+	&-cartContent
+		display: flex
+		-webkit-flex-direction: column 
+		-ms-flex-direction: column 
+		flex-direction: column 
+		gap: .3rem
+	&-cartRow
+		display: flex
+		-webkit-flex-direction: row 
+		-ms-flex-direction: row 
+		flex-direction: row 
+		gap: 18px
+	&-cartCol
+		width: 100px

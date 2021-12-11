@@ -1,19 +1,19 @@
+<?PHP session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Интернет магазин</title>
-	<link rel="stylesheet" href="./CSS/style.css">
+	<title>Document</title>
+	<link rel="stylesheet" href="CSS/style.css">
 </head>
-<?PHP include "./server/logout.php"; ?>
 <body>
 	<div class="wrapper">
-		<?PHP include "./components/header/header.php"; ?>	
-		<main class="main">
-			
-		</main>
-		<?PHP include "./components/footer/footer.php"; ?>
+		<?PHP include "./components/header.php"; ?>
+		<?PHP include "./components/content.php"; ?>
+		<?PHP include "./components/footer.php"; ?>
 	</div>
 </body>
 </html>
+
+<!-- https://gb.ru/lessons/183236 1h04m -->
