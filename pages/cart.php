@@ -9,7 +9,7 @@
 	include "./engine/functions.php";
 
 	if(isset($_GET['order'])){
-		createIrder($connect);
+		createOrder($connect);
 	}
 	if(isset($_GET['finish'])){ ?>
 		<h1>Заказ находится в обработке! Общая стоимость заказа: <?PHP $_GET['finish'] ?></h1>
@@ -37,12 +37,19 @@
 		<?PHP }
 		?>
 	</div>
-	<div class="main-cartContent">
+	<form class="main-cartContent" action="./engine/payment.php" method="POST">
 		<?PHP while($data = mysqli_fetch_assoc($res)){ ?>
-			<div class="main-cartRow">
-				<p class="main-cartCol"><?PHP echo $data['title'] ?></p>
-				<p class="main-cartCol"><?PHP echo $data['sum'] ?></p>
-				<input class="main-cartCol" type="text" id="good_<?PHP echo $data['id_good'] ?>" type="number" value="<?PHP echo $data['count'] ?>">
+			<div class="main-cartRow cart">
+				<p class="main-cartCol cart-title" name="title"><?PHP echo $data['title'] ?></p>
+				<p class="main-cartCol cart-sum" name="sum"><?PHP echo $data['sum'] ?></p>
+				<input 
+					class="main-cartCol cart-quantity" 
+					name="count" 
+					type="text" 
+					id="good_<?PHP echo $data['id_good'] ?>" 
+					type="number" 
+					value="<?PHP echo $data['count'] ?>
+				">
 			<?PHP 
 				if(!isset($_SESSION['order'])){ ?>
 					<a 
@@ -53,5 +60,6 @@
 				<?PHP } ?>
 			</div>
 		<?PHP } ?> 
-	</div>
+		<input type="submit" class="main-submitPayment">
+	</form>
 </div>
