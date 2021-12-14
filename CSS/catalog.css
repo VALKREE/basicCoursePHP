@@ -1,0 +1,31 @@
+.main-goods {
+  margin: 1rem;
+  -webkit-justify-content: center;
+  justify-content: center;
+  gap: 1rem; }
+.main-good {
+  width: 260px;
+  padding: 15px 10px;
+  border: 1px solid #000;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 0.5rem; }
+.main-goodShortDescription {
+  text-align: center; }
+.main-goodAddToCart {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  gap: 10px; }
+.main-goodsQuantity {
+  text-align: center;
+  width: 50px;
+  height: 25px;
+  padding: 5px; }
+.main-addToCart {
+  height: 39px;
+  padding: 0 5px;
+  cursor: pointer; }
+
+/*# sourceMappingURL=catalog.css.map */
