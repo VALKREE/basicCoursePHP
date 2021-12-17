@@ -1,4 +1,5 @@
 <?PHP
+	// cart
 	include "./config.php";
 	function updateCountInCart($connect,$id_good,$count){
 		$sql = "
@@ -74,3 +75,4 @@
 		return $option;
 	}
 ?>
+

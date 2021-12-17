@@ -15,5 +15,3 @@
 	</div>
 </body>
 </html>
-
-<!-- https://gb.ru/lessons/183236 1h04m -->
