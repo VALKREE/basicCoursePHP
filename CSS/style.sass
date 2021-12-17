@@ -1,0 +1,142 @@
+*
+	margin: 0
+	padding: 0
+	
+html,body
+	height: 100%
+.wrapper
+	height: 100%
+	display: flex
+	-webkit-flex-direction: column 
+	-ms-flex-direction: column 
+	flex-direction: column 
+.center
+	padding-left: calc(50% - 570px)
+	padding-right: calc(50% - 570px)  
+.header,.footer
+	height: auto
+	min-height: 60px
+	background: #000 
+	color: #fff
+.header
+	display: flex 
+	-webkit-justify-content: center 
+	justify-content: center 
+	-webkit-align-items: center 
+	align-items: center 
+	&-list
+		display: flex
+		-webkit-flex-direction: row 
+		-ms-flex-direction: row 
+		flex-direction: row 
+		gap: 1rem
+	&-listElement
+		list-style: none 
+	&-link
+		color: #fff
+		text-decoration: none 
+		
+.main
+	display: flex
+	-webkit-flex-direction: column 
+	-ms-flex-direction: column 
+	flex-direction: column 
+	-webkit-align-items: center 
+	align-items: center 
+	height: 100%
+	&-formDetails
+		cursor: pointer
+		display: flex
+		gap: 30px
+		-webkit-justify-content: center
+		justify-content: center
+		&::-webkit-details-marker
+			display: none
+	&-formSummary
+		cursor: pointer
+		display: flex
+		gap: 30px
+		-webkit-justify-content: center
+		justify-content: center
+		&::-webkit-details-marker
+			display: none	
+	&-goods
+		margin: 1rem
+		display: flex
+		-webkit-flex-direction: row 
+		-ms-flex-direction: row 
+		flex-direction: row 
+		-webkit-justify-content: center
+		justify-content: center
+		-webkit-align-items: center
+		align-items: center
+		gap: 1rem
+	&-good
+		text-align: center 
+		display: flex
+		-webkit-flex-direction: column 
+		-ms-flex-direction: column 
+		flex-direction: column 
+		-webkit-justify-content: center
+		justify-content: center
+		-webkit-align-items: center
+		align-items: center
+		border: 1px solid #000
+		padding: 1rem 
+		gap: 10px
+	&-cartHeading
+		display: flex
+		-webkit-flex-direction: row 
+		-ms-flex-direction: row 
+		flex-direction: row 
+		&_h4
+			width: 120px
+	&-cartContent
+		display: flex
+		-webkit-flex-direction: column 
+		-ms-flex-direction: column 
+		flex-direction: column 
+		gap: .3rem
+	&-cartRow
+		display: flex
+		-webkit-flex-direction: row 
+		-ms-flex-direction: row 
+		flex-direction: row 
+		gap: 18px
+	&-cartCol
+		width: 100px
+		
+
+	&-usersBar,&-goodsBar,&-ordersBar
+		overflow-y: scroll
+		width: 100%
+		margin: 1rem
+		display: flex
+		-webkit-flex-direction: column 
+		-ms-flex-direction: column 
+		flex-direction: column 
+		-webkit-align-items: center
+		align-items: center
+		gap: 1rem
+		border: 1px solid #000
+		padding: 1rem
+	&-userBar,&-goodBar,&-orderBar
+		padding: 1rem
+		border: 1px solid #000
+		display: flex
+		gap: 1rem
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: space-between 
+		justify-content: space-between 
+	&-userText
+		width: 150px
+	&-formSumbit
+		cursor: pointer
+		border-radius: 5px
+		border: 1px solid #000
+		width: 100px
+		padding: 5px 10px
+		background: #e6e6e6 
+		&:hover
+			background: #ccc 
